@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星狐Claw — 一键部署 OpenClaw 机器人</title>
+    <meta name="description" content="星狐Claw 一键部署工具，不用懂技术，不用折腾服务器，1分钟内部署 OpenClaw AI 机器人到 Telegram、飞书、钉钉等聊天平台。">
+    <meta name="keywords" content="OpenClaw, 星狐Claw, AI机器人, 一键部署, Telegram Bot, Claude, GPT, Gemini">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">星狐Claw</div>
+            <nav class="nav">
+                <a href="#features" class="nav-link">功能</a>
+                <a href="#comparison" class="nav-link">对比</a>
+                <a href="#download" class="nav-link download-nav-btn">下载</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主标题区域 -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">星狐Claw 一键部署 OpenClaw</h1>
+            <p class="hero-subtitle">不用懂技术，不用折腾服务器。只需点击一次，星狐 Claw 会自动为你创建并配置 OpenClaw 机器人，几分钟内即可在你常用的聊天应用中开始使用。</p>
+
+            <!-- 下载按钮 -->
+            <div class="download-hero" id="download">
+                <a href="https://github.com/FoxProAI/xinghuclaw-tool/releases/latest/download/openclaw-manager.exe" class="download-btn">
+                    <span class="download-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </span>
+                    <span>下载星狐Claw 一键部署工具</span>
+                </a>
+                <div class="download-meta">
+                    <span>Windows 64-bit</span>
+                    <span class="dot">·</span>
+                    <span>v1.0.0</span>
+                    <span class="dot">·</span>
+                    <span>免费使用</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能特性 -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <h2 class="section-title">为什么选择星狐Claw？</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>一键安装</h3>
+                    <p>下载即用，自动检测并安装所有依赖环境，无需手动配置 Node.js、npm 等。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>多模型支持</h3>
+                    <p>支持 Claude、GPT、Gemini 等主流 AI 模型，一键切换，按需选择。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>多渠道对接</h3>
+                    <p>支持 Telegram、飞书、钉钉、Discord 等多种聊天平台，轻松连接你的 AI 助手。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🖥️</div>
+                    <h3>图形化管理</h3>
+                    <p>内置可视化管理面板，实例启停、模型切换、日志查看，全部可视化操作。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 对比区域 -->
+    <section class="comparison-section" id="comparison">
+        <div class="container">
+            <div class="section-badge-wrapper">
+                <div class="section-badge">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    对比
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </div>
+            </div>
+            <h2 class="section-title">传统方法 vs 星狐Claw</h2>
+
+            <div class="comparison-grid">
+                <!-- 传统方法 -->
+                <div class="comparison-card traditional">
+                    <h3>传统方法</h3>
+                    <ul class="steps-list">
+                        <li>
+                            <span class="step-text">购买本地虚拟机</span>
+                            <span class="step-time">15 分钟</span>
+                        </li>
+                        <li>
+                            <span class="step-text">创建 SSH 密钥并安全存储</span>
+                            <span class="step-time">10 分钟</span>
+                        </li>
+                        <li>
+                            <span class="step-text">通过 SSH 连接到服务器</span>
+                            <span class="step-time">5 分钟</span>
+                        </li>
+                        <li>
+                            <span class="step-text">安装 Node.js 和 NPM</span>
+                            <span class="step-time">5 分钟</span>
+                        </li>
+                        <li>
+                            <span class="step-text">安装 OpenClaw</span>
+                            <span class="step-time">7 分钟</span>
+                        </li>
+                        <li>
+                            <span class="step-text">设置 OpenClaw</span>
+                            <span class="step-time">10 分钟</span>
+                        </li>
+                        <li>
+                            <span class="step-text">连接到 AI 提供商</span>
+                            <span class="step-time">4 分钟</span>
+                        </li>
+                        <li>
+                            <span class="step-text">对接Telegram机器人</span>
+                            <span class="step-time">4 分钟</span>
+                        </li>
+                    </ul>
+                    <div class="total-time">
+                        <span>总计</span>
+                        <span class="time">60 分钟</span>
+                    </div>
+                    <p class="note">如果您不懂技术，这些时间需要乘以 10 — 您必须先学习每个步骤。</p>
+                </div>
+
+                <!-- 星狐Claw -->
+                <div class="comparison-card modern">
+                    <h3>星狐Claw</h3>
+                    <div class="simple-time">&lt;1 分钟</div>
+                    <p class="simple-desc">下载工具，选择模型，连接渠道 — 1分钟内完成。</p>
+                    <p class="simple-detail">所有环境自动配置，依赖自动安装，图形化界面引导，零技术门槛。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 用例展示区域 -->
+    <section class="use-cases-section">
+        <div class="container">
+            <div class="use-cases-header">
+                <h2>OpenClaw 能为您做什么？</h2>
+                <h3>一个助手，数千种用例</h3>
+            </div>
+
+            <div class="use-cases-scroll">
+                <div class="use-cases-track track-1">
+                    <div class="use-case-item">✉ 阅读和总结邮件</div>
+                    <div class="use-case-item">✎ 起草回复和跟进</div>
+                    <div class="use-case-item">⚬ 实时翻译消息</div>
+                    <div class="use-case-item">◉ 整理收件箱</div>
+                    <div class="use-case-item">◎ 回答支持工单</div>
+                    <div class="use-case-item">▢ 总结长文档</div>
+                    <div class="use-case-item">○ 会议前提醒</div>
+                    <div class="use-case-item">◐ 从聊天安排会议</div>
+                    <div class="use-case-item">◑ 搜索历史对话</div>
+                    <div class="use-case-item">◒ 生成数据报告</div>
+                    <div class="use-case-item">◓ 设置任务提醒</div>
+                    <div class="use-case-item">◔ 记录会议纪要</div>
+                    <!-- duplicate for seamless loop -->
+                    <div class="use-case-item">✉ 阅读和总结邮件</div>
+                    <div class="use-case-item">✎ 起草回复和跟进</div>
+                    <div class="use-case-item">⚬ 实时翻译消息</div>
+                    <div class="use-case-item">◉ 整理收件箱</div>
+                    <div class="use-case-item">◎ 回答支持工单</div>
+                    <div class="use-case-item">▢ 总结长文档</div>
+                    <div class="use-case-item">○ 会议前提醒</div>
+                    <div class="use-case-item">◐ 从聊天安排会议</div>
+                    <div class="use-case-item">◑ 搜索历史对话</div>
+                    <div class="use-case-item">◒ 生成数据报告</div>
+                    <div class="use-case-item">◓ 设置任务提醒</div>
+                    <div class="use-case-item">◔ 记录会议纪要</div>
+                </div>
+
+                <div class="use-cases-track track-2">
+                    <div class="use-case-item">◕ 自动化工作流程</div>
+                    <div class="use-case-item">◖ 分析业务数据</div>
+                    <div class="use-case-item">◗ 生成创意内容</div>
+                    <div class="use-case-item">◘ 智能通知管理</div>
+                    <div class="use-case-item">◙ 知识库问答</div>
+                    <div class="use-case-item">◚ 客户反馈分析</div>
+                    <div class="use-case-item">◛ 头脑风暴助手</div>
+                    <div class="use-case-item">◜ 培训材料生成</div>
+                    <div class="use-case-item">◝ 社交媒体管理</div>
+                    <div class="use-case-item">◞ 安全审计日志</div>
+                    <div class="use-case-item">◟ 视频脚本撰写</div>
+                    <div class="use-case-item">◠ 技术文档编写</div>
+                    <!-- duplicate -->
+                    <div class="use-case-item">◕ 自动化工作流程</div>
+                    <div class="use-case-item">◖ 分析业务数据</div>
+                    <div class="use-case-item">◗ 生成创意内容</div>
+                    <div class="use-case-item">◘ 智能通知管理</div>
+                    <div class="use-case-item">◙ 知识库问答</div>
+                    <div class="use-case-item">◚ 客户反馈分析</div>
+                    <div class="use-case-item">◛ 头脑风暴助手</div>
+                    <div class="use-case-item">◜ 培训材料生成</div>
+                    <div class="use-case-item">◝ 社交媒体管理</div>
+                    <div class="use-case-item">◞ 安全审计日志</div>
+                    <div class="use-case-item">◟ 视频脚本撰写</div>
+                    <div class="use-case-item">◠ 技术文档编写</div>
+                </div>
+
+                <div class="use-cases-track track-3">
+                    <div class="use-case-item">◡ 项目进度跟踪</div>
+                    <div class="use-case-item">◢ 演讲稿准备</div>
+                    <div class="use-case-item">◣ 电话记录整理</div>
+                    <div class="use-case-item">◤ 绩效评估辅助</div>
+                    <div class="use-case-item">◥ 多语言沟通</div>
+                    <div class="use-case-item">◦ 库存管理提醒</div>
+                    <div class="use-case-item">◧ 财务报表解读</div>
+                    <div class="use-case-item">◨ 营销策略建议</div>
+                    <div class="use-case-item">◩ 故障排查指导</div>
+                    <div class="use-case-item">◪ 学习计划制定</div>
+                    <div class="use-case-item">◫ 礼物推荐建议</div>
+                    <div class="use-case-item">◬ 餐厅预订管理</div>
+                    <!-- duplicate -->
+                    <div class="use-case-item">◡ 项目进度跟踪</div>
+                    <div class="use-case-item">◢ 演讲稿准备</div>
+                    <div class="use-case-item">◣ 电话记录整理</div>
+                    <div class="use-case-item">◤ 绩效评估辅助</div>
+                    <div class="use-case-item">◥ 多语言沟通</div>
+                    <div class="use-case-item">◦ 库存管理提醒</div>
+                    <div class="use-case-item">◧ 财务报表解读</div>
+                    <div class="use-case-item">◨ 营销策略建议</div>
+                    <div class="use-case-item">◩ 故障排查指导</div>
+                    <div class="use-case-item">◪ 学习计划制定</div>
+                    <div class="use-case-item">◫ 礼物推荐建议</div>
+                    <div class="use-case-item">◬ 餐厅预订管理</div>
+                </div>
+
+                <div class="use-cases-track track-4">
+                    <div class="use-case-item">◭ 旅行行程规划</div>
+                    <div class="use-case-item">◮ 健康提醒管理</div>
+                    <div class="use-case-item">◯ 音乐推荐服务</div>
+                    <div class="use-case-item">● 照片整理分类</div>
+                    <div class="use-case-item">◐ 游戏攻略查询</div>
+                    <div class="use-case-item">◑ 智能家居控制</div>
+                    <div class="use-case-item">◒ 车辆保养提醒</div>
+                    <div class="use-case-item">◓ 影视推荐服务</div>
+                    <div class="use-case-item">◔ 设计灵感收集</div>
+                    <div class="use-case-item">◕ 新闻摘要推送</div>
+                    <div class="use-case-item">◖ 科研论文检索</div>
+                    <div class="use-case-item">◗ 法律咨询辅助</div>
+                    <!-- duplicate -->
+                    <div class="use-case-item">◭ 旅行行程规划</div>
+                    <div class="use-case-item">◮ 健康提醒管理</div>
+                    <div class="use-case-item">◯ 音乐推荐服务</div>
+                    <div class="use-case-item">● 照片整理分类</div>
+                    <div class="use-case-item">◐ 游戏攻略查询</div>
+                    <div class="use-case-item">◑ 智能家居控制</div>
+                    <div class="use-case-item">◒ 车辆保养提醒</div>
+                    <div class="use-case-item">◓ 影视推荐服务</div>
+                    <div class="use-case-item">◔ 设计灵感收集</div>
+                    <div class="use-case-item">◕ 新闻摘要推送</div>
+                    <div class="use-case-item">◖ 科研论文检索</div>
+                    <div class="use-case-item">◗ 法律咨询辅助</div>
+                </div>
+            </div>
+
+            <p class="use-cases-note">提示：您可以通过自然语言添加任意多个用例</p>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                &copy; 2025 星狐Claw &mdash; 用 ❤️ 构建
+                <a href="mailto:support@openclaw.com" class="footer-link">联系支持</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+        var header = document.getElementById('header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            var target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+    </script>
+</body>
+</html>
