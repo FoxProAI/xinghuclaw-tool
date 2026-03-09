@@ -190,7 +190,7 @@ body::before {
 
 /* Hero Section */
 .hero {
-    padding: 80px 0 60px;
+    padding: 80px 0 30px;
     text-align: center;
 }
 
@@ -405,7 +405,7 @@ body::before {
 
 /* Features Section */
 .features-section {
-    padding: 80px 0;
+    padding: 40px 0 80px;
 }
 
 .features-grid {
@@ -442,8 +442,10 @@ body::before {
 }
 
 .feature-icon {
-    font-size: 36px;
-    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .feature-card h3 {
