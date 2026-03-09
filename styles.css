@@ -343,6 +343,66 @@ body::before {
     fill: currentColor;
 }
 
+/* macOS Hint */
+.mac-hint {
+    margin-top: 16px;
+    padding: 20px 24px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    max-width: 480px;
+    text-align: left;
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.mac-hint-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.mac-hint-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mac-hint-step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex-shrink: 0;
+}
+
+.mac-hint code {
+    display: block;
+    padding: 8px 12px;
+    margin-left: 32px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    font-family: 'SF Mono', Menlo, monospace;
+    font-size: 13px;
+    color: #e0e0e0;
+    user-select: all;
+    cursor: pointer;
+}
+
 /* Features Section */
 .features-section {
     padding: 80px 0;

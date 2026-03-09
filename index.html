@@ -78,6 +78,24 @@
                     <span class="dot">·</span>
                     <span>免费使用</span>
                 </div>
+                <div class="mac-hint" id="macHint" style="display: none;">
+                    <div class="mac-hint-title">启动方式</div>
+                    <div class="mac-hint-steps">
+                        <div class="mac-hint-step">
+                            <span class="step-num">1</span>
+                            <span>双击下载的 .pkg 文件进行安装</span>
+                        </div>
+                        <div class="mac-hint-step">
+                            <span class="step-num">2</span>
+                            <span>打开 OpenClaw Manager（启动台或应用程序文件夹）</span>
+                        </div>
+                        <div class="mac-hint-step">
+                            <span class="step-num">3</span>
+                            <span>首次运行需要允许安全性设置：</span>
+                        </div>
+                        <code>系统设置 → 隐私与安全性 → 仍然允许</code>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -348,10 +366,12 @@
             label: 'Windows 11 系统'
         },
         mac: {
-            url: 'https://dl.xinghuclaw.com/openclaw-manager-mac-v1',
+            url: 'https://dl.xinghuclaw.com/OpenClaw-Manager-v1.pkg',
             label: 'macOS (Apple Silicon)'
         }
     };
+
+    var macHint = document.getElementById('macHint');
 
     document.querySelectorAll('.platform-tab').forEach(function(tab) {
         tab.addEventListener('click', function() {
@@ -366,6 +386,7 @@
                 document.getElementById('downloadBtn').href = data.url;
                 document.getElementById('platformLabel').textContent = data.label;
             }
+            macHint.style.display = platform === 'mac' ? '' : 'none';
         });
     });
     </script>
